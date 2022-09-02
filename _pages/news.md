@@ -4,6 +4,7 @@ title: news
 permalink: /news/
 description: What has been going on
 order: 3
+nav: true
 ---
 <div>
     <table>
