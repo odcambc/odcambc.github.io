@@ -81,7 +81,7 @@ collections:
     output: true
     permalink: /news/:path/
   research:
-    output: false
+    output: true
     permalink: /research/:path/
   reviews:
     output: true
