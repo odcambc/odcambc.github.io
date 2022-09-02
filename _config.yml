@@ -20,6 +20,8 @@ url: https://odcambc.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 
+cv_nav: true # set to true to have a link to a CV in the header
+
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
