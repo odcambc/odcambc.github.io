@@ -9,21 +9,36 @@ nav_order: 4
 
 <h1>Peer Review</h1>
 <div class="container-fluid">
+<h7>
+Peer review of scientific manuscripts is essential for what is, currently, by far the most widely
+accepted means of communication of scientific results: publishing papers in scientific journals. The
+process of peer review plays an important role in refining the body of work prior to final publication.
+<br><br>
+We believe that transparency in peer review can improve the speed, quality, and collegiality of the publication
+process.  Peer review is also an important training opportunity for lab members in scientific thinking and writing. As such, we only review manuscripts that have been posted on preprint servers and we post our peer review
+comments publicly. Additional resources can be found in our
+<a href="https://fraserlab.com/compact/" target="_blank" alt = "Lab Compact (opens in new tab)">Lab Compact</a>
+and in the <a href="https://fraserlab.com/peer_review/" target="_blank" alt = "Peer Review minicourse (opens in new tab)">Peer Review minicourse</a>. We support other initiatives to improve peer review (such as <a href="https://www.reviewcommons.org/" target="blank" alt = "Review Commons (opens in new tab)">Review Commons</a> and <a href="https://asapbio.org/feedbackasap" target="blank" alt = "FeedbackASAP (opens in new tab)">FeedbackASAP</a>).
+<br><br>
+</h7>
 
 {% for review in site.reviews reversed %}
 	<hr>
-	<div class="row" >
+	<div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{review.date}}">
 	<div><h5>{{ review.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}.<br></h5>
 	<h6>{{ review.authors | markdownify | remove: '<p>' | remove: '</p>' | strip}}.</h6><br>
 	Reviewed by: <strong>{{ review.reviewers | markdownify | remove: '<p>' | remove: '</p>' | strip }}.</strong><br><br>
 	</div>
+	{% if review.abstract %}
+	<div>{{ review.abstract | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+	{% endif %}
 	<br>
 	</div>
 
-	<div class="row">
+	<div class="row" style="padding-top: 20px; margin-top: -20px">
 		<div class="col">
 			{% if review.image %}
-			<img class = "img-fluid" src = "{{review.image}}" alt = "Representative Image">
+			<img class = "img-fluid" src = "{{review.image}}" alt = "Representative Image" style="max-height: 250px;; margin-right: 30px">
 			{% endif %}
 		</div>
 		<ul class="col">
