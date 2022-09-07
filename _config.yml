@@ -103,7 +103,8 @@ news_limit: 10 # leave blank to include all the news in the `_news` folder
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  parse_block_html: true
+  input: gfm
+  parse_block_html: false
 
 # Includes & excludes
 include: ['_pages']
