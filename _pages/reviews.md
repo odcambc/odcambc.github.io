@@ -23,7 +23,8 @@ and in the <a href="https://fraserlab.com/peer_review/" target="_blank" alt = "P
 <br><br>
 </h7>
 
-{% for review in site.reviews reversed %}
+{% assign reviews = site.reviews | reverse %}
+{% for review in reviews %}
 	<hr>
 	<div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{ review.date }}">
 	<div><h5>{{ review.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}.<br></h5>
@@ -95,6 +96,8 @@ and in the <a href="https://fraserlab.com/peer_review/" target="_blank" alt = "P
 				<li>Review: <a href="{{ record.pdf }}" target="_blank" alt="link to full review text: {{ record.pdf }}">Full Text</a></li>
 				{% endif %}
 
+      {% else %}
+        The peer-review collection is empty.
 			{% endfor %}
 		</ul>
 		<ul class="col">
@@ -108,6 +111,8 @@ and in the <a href="https://fraserlab.com/peer_review/" target="_blank" alt = "P
 				{% if record.pdf %}
 				<li><a href="{{ record.pdf }}" target="_blank" alt="link to full text: {{ record.pdf }}">Full Text</a></li>
 				{% endif %}
+        {% else %}
+          The published collection is empty.
 			{% endfor %}
 
 			{% if review.highlight %}
@@ -143,7 +148,8 @@ and in the <a href="https://fraserlab.com/peer_review/" target="_blank" alt = "P
 					{% if record.pdf %}
 					<li><a href="{{ record.pdf }}" target="_blank" alt="link to full text: {{ record.pdf }}">Full Text</a></li>
 					{% endif %}
-
+          {% else %}
+            The highlight collection is empty.
 				{% endfor %}
 			{% endif %}
 		{% endif %}
