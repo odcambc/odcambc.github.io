@@ -1,5 +1,5 @@
 ---
-title: "Accelerating Scientific Publication in Biology" 
+title: "Accelerating Scientific Publication in Biology"
 date: "2015-07-11"
 authors: "Vale R"
 reviewers: "Fraser JS"
