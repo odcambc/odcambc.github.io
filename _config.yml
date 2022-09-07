@@ -82,6 +82,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
   research:
     output: true
     permalink: /research/:path/
