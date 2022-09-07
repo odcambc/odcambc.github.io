@@ -7,9 +7,9 @@ image: "/assets/img/reviews/2015_vale.png"
 
 peer-review:
   - biorxiv_version: "022368v1"
-  - disqus: "z8jag1"
+    disqus: "z8jag1"
 
 published:
   - pmid: "26508643"
-  - pdf: "http://cdn.fraserlab.com/reviews/2015_vale.pdf"
+    pdf: "http://cdn.fraserlab.com/reviews/2015_vale.pdf"
 ---

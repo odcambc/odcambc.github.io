@@ -8,6 +8,6 @@ pmcid: "PMC7695847"
 journal: 'Nature Communications'
 authors: Kermani, A. A., **Macdonald, CB**, Burata, O. E., Ben Koff, B., Koide, A., Denbaum, E., Koide, S., Stockbridge, R. B.
 links:
-  -name: "Publication"
-  url: 'https://doi.org/10.1038/s41467-020-19820-8'
+  - name: "Publication"
+    url: 'https://doi.org/10.1038/s41467-020-19820-8'
 ---
