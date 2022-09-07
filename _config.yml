@@ -103,14 +103,6 @@ news_limit: 10 # leave blank to include all the news in the `_news` folder
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    css_class: 'highlight'
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
   parse_block_html: true
 
 # Includes & excludes
