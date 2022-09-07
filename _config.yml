@@ -26,7 +26,7 @@ cv_nav: true # set to true to have a link to a CV in the header
 # Layout
 # -----------------------------------------------------------------------------
 
-max_width: 800px
+max_width: 1024px
 
 # -----------------------------------------------------------------------------
 # Social integration
