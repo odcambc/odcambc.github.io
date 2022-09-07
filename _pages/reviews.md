@@ -6,7 +6,7 @@ description: Public reviews.
 nav: true
 nav_order: 4
 ---
-
+<div class="reviews">
 <h1>Peer Review</h1>
 <div class="container-fluid">
 <h7>
@@ -35,11 +35,11 @@ and in the <a href="https://fraserlab.com/peer_review/" target="_blank" alt = "P
 	<br>
 </div>
 
-<div class="col">
-	{% if review.image %}
-		<img class = "img-fluid" src = "{{review.image}}" alt = "Representative Image" style="max-height: 250px;; margin-right: 30px">
-	{% endif %}
-</div>
+	<div class="col">
+		{% if review.image %}
+			<img class = "img-fluid" src = "{{review.image}}" alt = "Representative Image" style="max-height: 250px;; margin-right: 30px">
+		{% endif %}
+	</div>
 	<div class="col">
 	<ul>
 		<h5>Peer Review</h5>
@@ -150,4 +150,5 @@ and in the <a href="https://fraserlab.com/peer_review/" target="_blank" alt = "P
 	</div>
 {% endfor %}
 
+</div>
 </div>
