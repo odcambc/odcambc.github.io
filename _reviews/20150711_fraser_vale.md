@@ -9,7 +9,7 @@ peer-review:
   biorxiv_version: "022368v1"
   disqus: "z8jag1"
 
-published:
+published: 
   pmid: "26508643"
   pdf: "http://cdn.fraserlab.com/reviews/2015_vale.pdf"
 ---
