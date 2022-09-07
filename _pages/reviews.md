@@ -8,7 +8,6 @@ nav_order: 4
 ---
 
 <!-- pages/reviews.md -->
-<h1>Peer Review</h1>
 <div class="container-fluid">
 <h7>
 Peer review of scientific manuscripts is essential for what is, currently, by far the most widely
