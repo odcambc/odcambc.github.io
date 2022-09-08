@@ -1,6 +1,6 @@
 ---
 title: "Deep insertion, deletion, and missense mutation libraries for exploring protein variation in evolution, disease, and biology"
-authors: "**Macdonald CB**, Nedrud D, Rockefeller Grimes P, Trinidad D, **Fraser JS**, Coyote-Maestas W."
+authors: "**Macdonald CB**, Nedrud D, Grimes PR, Trinidad D, Fraser JS, Coyote-Maestas W."
 journal: #"Journal Name"
 pub_date: #"YYYY-MM-DD" #Date of journal publication, NOT BIORXIV UPLOAD
 image: "/assets/img/publications/2022_macdonald.png" #Minimum dimensions of
