@@ -2,7 +2,7 @@
 layout: page
 permalink: /reviews/
 title: reviews
-description: Public reviews.
+description: open peer review
 nav: true
 nav_order: 4
 ---

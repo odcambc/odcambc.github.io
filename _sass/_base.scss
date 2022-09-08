@@ -8,8 +8,17 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 
+/*
 hr {
   border-top: 1px solid var(--global-divider-color);
+}
+*/
+
+hr {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: $border-width;
+  border-bottom-color: $border-color;
 }
 
 table {
