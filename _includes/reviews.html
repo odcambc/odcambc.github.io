@@ -52,10 +52,16 @@
 				<li>Preprints.org: <a href="https://www.preprints.org/manuscript/{{record.preprintsorg}}" target="_blank" alt = "preprints.org preprint link: {{record.preprintsorg}}">{{record.preprintsorg}}</a></li>
 				{% endif %}
 
-
 				<!--Disqus comment-->
 				{% if record.disqus %}
 				<li>Review: <a href="http://disq.us/p/{{record.disqus}}" target="_blank" alt = "link to review as Disqus comment: {{record.disqus}}">{{record.disqus}}</a></li>
+				{% endif %}
+
+				<!--Hypothesis annotation-->
+				{% if record.hypothesis %}
+					{% if record.biorxiv %}
+					<li>Review: <a href="https://hyp.is/{{record.hypothesis}}//www.biorxiv.org/content/10.1101/{{record.biorxiv}}" target="_blank" alt = "link to review as Disqus comment: {{record.disqus}}">{{record.disqus}}</a></li>
+					{% endif %}
 				{% endif %}
 
 				<!--TRiP Review-->
