@@ -79,6 +79,11 @@
 				<li>Zenodo Record: <a href="https://www.zenodo.org/record/{{record.zenodo}}" target="_blank" alt = "link to review as zenodo PDF: {{record.zenodo}}">{{record.zenodo}}</a></li>
 				{% endif %}
 
+				<!--URL-->
+				{% if record.url %}
+				<li>Peer review: <a href="{{record.url}}" target="_blank" alt = "link to peer review:">Link to peer review</a></li>
+				{% endif %}
+
 				{% if record.pdf %}
 				<li>Review: <a href="{{record.pdf}}" target="_blank" alt="link to full review text: {{record.pdf}}">Full Text</a></li>
 				{% endif %}
