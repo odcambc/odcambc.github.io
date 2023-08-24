@@ -6,7 +6,7 @@ image: "/assets/img/pub/2020-kermani-macdonald.png"
 pmid: "33247110"
 pmcid: "PMC7695847"
 journal: 'Nature Communications'
-authors: "Kermani AA#, **Macdonald CB#**, Burata OE, Koff BB, Koide A, Denbaum E, Koide S, Stockbridge RB (#Co-First Authors)"
+authors: "Kermani AA#, **Macdonald CB#**, Burata OE, Koff BB, Koide A, Denbaum E, Koide S, Stockbridge RB (#Equal contributions)"
 
 links:
   - name: "Publication"
