@@ -11,7 +11,7 @@ nav_order: 4
 Peer review is a good idea. Gatekeeping is not. As a reviewer, I see my job as sharpening the work by defining the boundaries of what can be supported, not dictating
 what I want the work to be. I aim to be attentive, courteous, and constructive. As a mentor, I try to involve trainees in the review process as well.
 
-See the peer review section of the [Fraser lab compact](https://fraserlab.com/philosophy/) for a lot more on this topic that I agree with
+See the peer review section of the [Fraser lab compact](https://fraserlab.com/philosophy/) for a lot more on this topic that I agree with,
 along with the [Peer Review in the Life Sciences](https://fraserlab.com/courses/peer_review_2023/) course we co-taught in 2023. Also see
 the polemically-titled ["Is Peer Review a Good Idea?"](https://www.journals.uchicago.edu/doi/10.1093/bjps/axz029) by Remco Heesen and Liam
 Kofi Bright for an interesting argument.
@@ -94,6 +94,11 @@ Kofi Bright for an interesting argument.
 
     			{% if record.pdf %}
     			<li>Review: <a href="{{record.pdf}}" target="_blank" alt="link to full review text: {{record.pdf}}">Full Text</a></li>
+    			{% endif %}
+
+    			<!--url-->
+    			{% if record.url %}
+    			<li>Review: <a href="{{record.url}}" target="_blank" alt="link to review}}">Review link</a></li>
     			{% endif %}
 
     		{% endfor %}
