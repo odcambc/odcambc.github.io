@@ -135,7 +135,6 @@ disqus_shortname: al-folio # put your disqus shortname
 # Collections
 # -----------------------------------------------------------------------------
 
-
 collections:
   news:
     defaults:
@@ -154,7 +153,6 @@ collections:
   projects:
     output: false
     permalink: /projects/:path/
-
 
 announcements:
   enabled: true
@@ -269,7 +267,6 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-
   last_name: Macdonald
   first_name: Christian B.
 

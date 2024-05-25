@@ -6,11 +6,10 @@ reviewers: "Macdonald CM"
 image: "/assets/img/reviews/2022_spreacker.png"
 
 peer-review:
- - biorxiv_version: "2021.12.04.471113v2"
- - prereview_beta: "doi-10.1101-2021.12.04.471113"
+  - biorxiv_version: "2021.12.04.471113v2"
+  - prereview_beta: "doi-10.1101-2021.12.04.471113"
 
 published:
-- pmid: "36496486"
-  pdf: "https://cdn.fraserlab.com/reviews/2022_Spreacker.pdf" #full cdn link
-
+  - pmid: "36496486"
+    pdf: "https://cdn.fraserlab.com/reviews/2022_Spreacker.pdf" #full cdn link
 ---
