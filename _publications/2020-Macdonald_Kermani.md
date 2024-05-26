@@ -8,6 +8,8 @@ pmcid: "PMC7695847"
 journal: "Nature Communications"
 authors: "Kermani AA#, **Macdonald CB#**, Burata OE, Koff BB, Koide A, Denbaum E, Koide S, Stockbridge RB (#Equal contributions)"
 
+pdf: "http://cdn.odcambc.com/publications/2020_kermani.pdf"
+
 links:
   - name: "Publication"
     url: "https://doi.org/10.1038/s41467-020-19820-8"
