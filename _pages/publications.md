@@ -38,7 +38,7 @@ nav_order: 2
 
 <div class="row" style="padding-top: 20px; margin-top: -20px">
 	<div class="col-sm-6">
-		<img class = "img-fluid" src = "{{publication.image}}" alt =  "Key Figure" style="max-height: 200px;">
+		<img class = "img-fluid" src = "{{publication.image}}" alt = "Key Figure" style="max-height: 200px;">
 	</div>
 	<ul class="col-sm-6">
 		<br>
