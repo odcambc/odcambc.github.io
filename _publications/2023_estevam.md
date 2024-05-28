@@ -4,7 +4,7 @@ authors: "Estevam GO, Linossi EM, **Macdonald CB**, Espinoza CA, Michaud JM, Coy
 journal:
 pub_date: "2023-08-04"
 image: "/assets/img/pub/2023_estevam.png"
-pmid: 37577651
+pmid: "37577651"
 pmcid: PMC10418267
 biorxiv_version: "2023.08.03.551866v3"
 #pdf:
