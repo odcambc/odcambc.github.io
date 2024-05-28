@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Note to self
-date: 2024-05-25 15:32:13
+date: 2024-05-28 11:11:13
 description: I learned something new about ls
 tags:
 categories: code
