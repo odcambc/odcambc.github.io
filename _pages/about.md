@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I graduated from Arizona State University with degrees in Mathematics and Biochemistry, where I conducted research in the total synthesis of marine natural products with Dr. George Pettit. Afterwards, I attended the University of Michigan for my Ph.D. in Biophysics. In the [Stockbridge](https://lsa.umich.edu/mcdb/people/faculty/stockbr.html) lab, I studied the evolution and function of bacterial membrane proteins involved in xenobiotic resistance, whether as fluoride channels or efflux pumps.
+I graduated from Arizona State University with degrees in Mathematics and Biochemistry, where I conducted research in the total synthesis of marine natural products with Dr. George Pettit. Afterwards, I attended the University of Michigan for my Ph.D. in Biophysics. In the [Stockbridge](https://lsa.umich.edu/mcdb/people/faculty/stockbr.html) lab, I studied the evolution and function of bacterial membrane proteins involved in xenobiotic resistance, whether as fluoride channels or efflux transporters.
 
 I am currently a member of the [Fraser](https://fraserlab.com/) and [Coyote-Maestas](https://www.wcoyotelab.com/) labs at UCSF, where I am using high-throughput functional genomics and structural approaches to understand the biophysics of protein evolution in contexts including antibiotic resistance, membrane protein folding and biogenesis, and kinase signalling. I love to tinker: with ideas as well as tools.
 
