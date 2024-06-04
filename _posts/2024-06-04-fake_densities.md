@@ -54,7 +54,6 @@ Use ChimeraX for the rest. Open the DX file as well as your reference structure.
 
 Play with the gaussian surface levels to get a view of the density. Also try different map styles: image is sort of neat.
 
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/posts/backlight_1.png" class="img-fluid rounded z-depth-1" %}
