@@ -8,7 +8,17 @@ nav: true
 nav_order: 2
 ---
 
+<<<<<<< HEAD
 <div class="container-fluid">
+=======
+<!-- _pages/publications.md -->
+
+{% if site.search_enabled %}
+<input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
+{% endif %}
+
+<div class="publications">
+>>>>>>> 0a40a227 (feat: simple filtering / searching on bibliography (#2523))
 
 {% assign sorted = site.publications | sort: "pub_date" | reverse %}
 {% for publication in sorted %}
