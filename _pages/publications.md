@@ -13,9 +13,9 @@ nav_order: 2
 =======
 <!-- _pages/publications.md -->
 
-{% if site.search_enabled %}
-<input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
-{% endif %}
+<!-- Bibsearch Feature -->
+
+{% include bib_search.liquid %}
 
 <div class="publications">
 >>>>>>> 0a40a227 (feat: simple filtering / searching on bibliography (#2523))
