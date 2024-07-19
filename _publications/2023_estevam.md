@@ -15,7 +15,7 @@ links:
   - name: Jura lab @ UC San Francisco
     url: https://cvri.ucsf.edu/~jura/
   - name: Collisson lab @ UC San Francisco
-    url: https://cancer.ucsf.edu/people/collisson.eric
+    url: https://bms.ucsf.edu/people/eric-collisson-md
   - name: "Celebratory Tweetstorm/Xstorm? by Gabriella Estevam"
     url: "https://twitter.com/GabbyEstevam/status/1687590999286235141"
 ---

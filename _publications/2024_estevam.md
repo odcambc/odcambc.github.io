@@ -16,5 +16,5 @@ links:
   - name: Jura lab @ UC San Francisco
     url: https://cvri.ucsf.edu/~jura/
   - name: Collisson lab @ UC San Francisco
-    url: https://cancer.ucsf.edu/people/collisson.eric
+    url: https://bms.ucsf.edu/people/eric-collisson-md
 ---
