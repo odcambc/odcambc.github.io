@@ -2,7 +2,11 @@
 layout: about
 title: about
 permalink: /
+<<<<<<< HEAD
 subtitle: Evolutionary biophysicist
+=======
+subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+>>>>>>> 97f78e5f (Update about.md (#2679))
 
 profile:
   align: right
