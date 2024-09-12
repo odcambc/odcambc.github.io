@@ -3,7 +3,7 @@ title: "Heterogeneous folding landscapes and predetermined breaking points withi
 date: "2024-04-26"
 authors: "Pechmann S"
 
-reviewers: "Macdonald CB and San Felipe CJ"
+reviewers: "Macdonald CB, San Felipe CJ"
 image: "/assets/img/reviews/2024_pechmann.png"
 
 peer-review:

@@ -3,7 +3,7 @@ title: "FusOn-pLM: A Fusion Oncoprotein-Specific Language Model via Focused Prob
 date: "2024-07-04"
 authors: "Vincoff S, Goel S, Kholina K, Pulugurta R, Vure P, Chatterjee P"
 
-reviewers: "Bajaj P and Macdonald CB"
+reviewers: "Bajaj P, Macdonald CB"
 image: "/assets/img/reviews/2024_vincoff.png"
 
 peer-review:
