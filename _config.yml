@@ -2,12 +2,21 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
+<<<<<<< HEAD
 title: Christian B. Macdonald, Ph.D. # the website title (if blank, full name will be used instead)
 first_name: Christian
 middle_name: B.
 last_name: Macdonald
 name: Christian B. Macdonald, Ph.D.
 email: christian.macdonald at ucsf.edu
+=======
+title: blank # the website title (if blank, full name will be used instead)
+first_name: You
+middle_name: R.
+last_name: Name
+contact_note: >
+  You can even add a little note about which of these is the best way to reach you.
+>>>>>>> e452f1a6 (Moved socials config to `_data/socials.yml` (#2885))
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Postdoctoral scholar at UCSF.
 
@@ -68,6 +77,7 @@ serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
+<<<<<<< HEAD
 # Social integration
 # -----------------------------------------------------------------------------
 
@@ -119,6 +129,8 @@ contact_note: >
   Email usually works best.
 
 # -----------------------------------------------------------------------------
+=======
+>>>>>>> e452f1a6 (Moved socials config to `_data/socials.yml` (#2885))
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
