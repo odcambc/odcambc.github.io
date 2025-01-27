@@ -18,9 +18,23 @@ profile:
     <p>Postdoctoral Scholar (F32 NRSA)</p>
     <p>christian.macdonald (at) ucsf.edu</p>
 
+<<<<<<< HEAD
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
+=======
+selected_papers: true # includes a list of papers marked as "selected={true}"
+>>>>>>> 0b3f19df (Moved specific information from config to about (#2985))
 social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
 I graduated from Arizona State University with degrees in Mathematics and Biochemistry, where I conducted research in the total synthesis of marine natural products with Dr. George Pettit. Afterwards, I attended the University of Michigan for my Ph.D. in Biophysics. In the [Stockbridge](https://lsa.umich.edu/mcdb/people/faculty/stockbr.html) lab, I studied the evolution and function of bacterial membrane proteins involved in xenobiotic resistance, whether as fluoride channels or efflux transporters.
