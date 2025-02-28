@@ -199,10 +199,13 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
+  books:
+    output: true
   news:
     defaults:
       layout: post
     output: true
+<<<<<<< HEAD
 <<<<<<< HEAD
     permalink: /news/:path/
   publications:
@@ -223,6 +226,10 @@ collections:
     output: true
     permalink: /:collection/:title/
 >>>>>>> 49ada3ea (Update collections permalinks in _config.yml)
+=======
+  projects:
+    output: true
+>>>>>>> 6625f239 (Digital Bookshelf V2 (#2866))
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -269,7 +276,7 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives
+  - jekyll-archives-v2
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
@@ -318,15 +325,14 @@ terser:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
+  posts:
+    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    permalinks:
+      year: "/blog/:year/"
+      tags: "/blog/:type/:name/"
+      categories: "/blog/:type/:name/"
+  books:
+    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 <<<<<<< HEAD
 display_tags: #["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
