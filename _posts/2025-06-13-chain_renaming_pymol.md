@@ -1,4 +1,4 @@
-gt---
+---
 layout: post
 title: Chain renaming in PyMOL
 date: 2024-06-06 10:32:13

@@ -6,8 +6,8 @@ title: Christian B. Macdonald, Ph.D. # the website title (if blank, full name wi
 first_name: Christian
 middle_name: B.
 last_name: Macdonald
-name: Christian B. Macdonald, Ph.D.
-email: christian.macdonald at ucsf.edu
+contact_note: >
+  Email usually works best.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Postdoctoral scholar at UCSF.
 footer_text: >
@@ -20,13 +20,10 @@ icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name 
 
 url: https://odcambc.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-last_updated: true # set to true if you want to display last updated in the footer
+last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 cv_nav: true # set to true to have a link to a CV in the header
-
-contact_note: >
-  Email usually works best.
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -90,8 +87,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: blog # blog_name will be displayed in your blog page
-blog_description: basically notes
+blog_name: al-folio # blog_name will be displayed in your blog page
+blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -125,6 +122,13 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
+external_sources:
+  - name: medium.com
+    rss_url: https://medium.com/@al-folio/feed
+  - name: Google Blog
+    posts:
+      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+        published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -156,7 +160,6 @@ collections:
     permalink: /reviews/:path/
   projects:
     output: false
-    permalink: /projects/:path/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -258,8 +261,6 @@ jekyll-archives:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
@@ -269,10 +270,10 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: Macdonald
-  first_name: Christian B.
+  last_name: [Einstein]
+  first_name: [Albert, A.]
 
-  style: genome-biology-and-evolution
+  style: apa
   locale: en
 
   source: /_bibliography/
@@ -296,10 +297,10 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: false # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: false # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
   google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: false # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
