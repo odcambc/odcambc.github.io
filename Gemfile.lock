@@ -313,28 +313,4 @@ DEPENDENCIES
   ostruct
 
 BUNDLED WITH
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-   2.5.7
-=======
-   2.5.18
->>>>>>> a88c9f11 (Removed mini_racer dependency, updated dependencies and tabler-icons (#2791))
-=======
-   2.5.7
->>>>>>> 05eb46ac (Replaced jekyll-minifier that uses uglifier by terser (#2571))
-=======
-   2.6.2
->>>>>>> 3795438a (Updated dependencies (#2925))
-=======
-   2.6.5
->>>>>>> 6625f239 (Digital Bookshelf V2 (#2866))
-=======
-   2.6.6
->>>>>>> 81b3c60f (Updated dependencies (#3091))
-=======
    2.6.9
->>>>>>> e82520e4 (Updated libraries versions (#3179))
