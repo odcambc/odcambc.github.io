@@ -176,52 +176,7 @@ ninja.data = [{
           section: "News",},{id: "news-gabby-s-followup-preprint-performing-inhibitor-screens-against-met-kinase-libraries-is-now-on-biorxiv-priyanka-and-i-also-published-a-review-of-an-interesting-recent-preprint-by-vincoff-et-al-which-fine-tuned-esm-2-on-fusion-oncoproteins-read-it-on-prereview-https-prereview-org-reviews-12658078-finally-i-just-joined-the-organizing-committee-of-the-atlas-of-variant-effects-seminar-series",
           title: 'Gabby’s followup preprint performing inhibitor screens against MET kinase libraries is now on...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
-            },},{id: "publications-antineoplastic-agents-599-total-synthesis-of-dolastatin-16",
+          section: "News",},{id: "publications-antineoplastic-agents-599-total-synthesis-of-dolastatin-16",
           title: 'Antineoplastic Agents. 599. Total Synthesis of Dolastatin 16',
           description: "",
           section: "Publications",handler: () => {
@@ -413,27 +368,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("mailto:%63%68%72%69%73%74%69%61%6E.%6D%61%63%64%6F%6E%61%6C%64 %61%74 %75%63%73%66.%65%64%75", "_blank");
-        },
-      },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
