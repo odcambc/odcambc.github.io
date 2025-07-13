@@ -8,9 +8,6 @@ nav: true
 nav_order: 2
 ---
 
-<<<<<<< HEAD
-<div class="container-fluid">
-=======
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
@@ -18,7 +15,6 @@ nav_order: 2
 {% include bib_search.liquid %}
 
 <div class="publications">
->>>>>>> 0a40a227 (feat: simple filtering / searching on bibliography (#2523))
 
 {% assign sorted = site.publications | sort: "pub_date" | reverse %}
 {% for publication in sorted %}
