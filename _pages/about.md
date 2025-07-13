@@ -2,11 +2,7 @@
 layout: about
 title: about
 permalink: /
-<<<<<<< HEAD
 subtitle: Evolutionary biophysicist
-=======
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
->>>>>>> 97f78e5f (Update about.md (#2679))
 
 profile:
   align: right
@@ -18,12 +14,8 @@ profile:
     <p>Postdoctoral Scholar (F32 NRSA)</p>
     <p>christian.macdonald (at) ucsf.edu</p>
 
-<<<<<<< HEAD
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-=======
-selected_papers: true # includes a list of papers marked as "selected={true}"
->>>>>>> 0b3f19df (Moved specific information from config to about (#2985))
 social: true # includes social icons at the bottom of the page
 
 announcements:
