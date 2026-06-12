@@ -1,15 +1,24 @@
 #!/usr/bin/env bash
 #
-# Prettier pre-commit hook.
+# Pre-commit hook. Two fast, offline checks on staged files:
 #
-# Runs the SAME prettier as CI (.github/workflows/prettier.yml does
-# `npx prettier . --check`) so that anything which passes here also passes CI.
-# It uses the prettier pinned in package.json and the @shopify liquid plugin
-# from .prettierrc, so formatting is identical to the CI job.
+#  1. Prettier — runs the SAME prettier as CI (.github/workflows/prettier.yml
+#     does `npx prettier . --check`), using the prettier pinned in package.json
+#     and the @shopify liquid plugin from .prettierrc, so formatting is identical
+#     to the CI job.
 #
-# Installed via:  git config core.hooksPath .githooks   (see README / setup note)
+#  2. Frontmatter link check — catches a bare `links:` url (no scheme) that would
+#     render as a relative path and 404. This is the class of bug that fails
+#     broken-links-site.yml in CI; full link checking still lives there (it needs
+#     a Jekyll build + network, too heavy for a commit hook). See
+#     .githooks/lint-frontmatter-urls.awk.
+#
+# Installed via:  git config core.hooksPath .githooks
 
 set -euo pipefail
+
+# Directory this hook lives in, so we can find sibling scripts regardless of cwd.
+hookdir="$(cd "$(dirname "$0")" && pwd)"
 
 # Collect staged files that are Added, Copied, or Modified (skip Deletes/Renames-away).
 # NUL-delimited read loop keeps paths with spaces intact and works on bash 3.2
@@ -24,8 +33,25 @@ if [ ${#staged[@]} -eq 0 ]; then
   exit 0
 fi
 
+# 1. Prettier.
 # --ignore-unknown: prettier silently skips files it has no parser for, so we can
 #   safely pass the whole staged list without pre-filtering by extension.
 # Prettier still honors .prettierignore on top of this.
-
 npx prettier --check --ignore-unknown "${staged[@]}"
+
+# 2. Frontmatter link check — only the staged markdown files. The awk script
+#    only reacts to a top-level `links:` block, so passing every .md is safe.
+md=()
+for f in "${staged[@]}"; do
+  case "$f" in
+    *.md) md+=("$f") ;;
+  esac
+done
+
+if [ ${#md[@]} -gt 0 ]; then
+  if ! awk -f "$hookdir/lint-frontmatter-urls.awk" "${md[@]}"; then
+    echo "✗ A 'links:' url above is missing a scheme (https://, /, #, or mailto:)." >&2
+    echo "  A bare value like \"pimentellab.com\" resolves as a relative path and 404s in CI." >&2
+    exit 1
+  fi
+fi
