@@ -28,6 +28,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
 I am currently a scientist in the [Wayment-Steele lab](https://waymentsteelelab.org/) at the University of Wisconsin-Madison.
 
 Previously I was a member of the [Fraser](https://fraserlab.com/) and [Coyote-Maestas](https://www.wcoyotelab.com/) labs at UCSF, where I used high-throughput functional genomics and structural approaches to understand the biophysics of protein evolution in contexts including antibiotic resistance, membrane protein folding and biogenesis, and kinase signalling. My work was supported by a Kirschstein NRSA (F32) fellowship from [NIH/NIGMS](https://www.nigms.nih.gov/).
