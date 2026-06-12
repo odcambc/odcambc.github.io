@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#
+# Prettier pre-commit hook.
+#
+# Runs the SAME prettier as CI (.github/workflows/prettier.yml does
+# `npx prettier . --check`) so that anything which passes here also passes CI.
+# It uses the prettier pinned in package.json and the @shopify liquid plugin
+# from .prettierrc, so formatting is identical to the CI job.
+#
+# Installed via:  git config core.hooksPath .githooks   (see README / setup note)
+
+set -euo pipefail
+
+# Collect staged files that are Added, Copied, or Modified (skip Deletes/Renames-away).
+# NUL-delimited read loop keeps paths with spaces intact and works on bash 3.2
+# (macOS ships an old bash without `mapfile`).
+staged=()
+while IFS= read -r -d '' f; do
+  staged+=("$f")
+done < <(git diff --cached --name-only --diff-filter=ACM -z)
+
+# Nothing staged that prettier should look at? Let the commit through.
+if [ ${#staged[@]} -eq 0 ]; then
+  exit 0
+fi
+
+# --ignore-unknown: prettier silently skips files it has no parser for, so we can
+#   safely pass the whole staged list without pre-filtering by extension.
+# Prettier still honors .prettierignore on top of this.
+
+npx prettier --check --ignore-unknown "${staged[@]}"
