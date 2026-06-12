@@ -33,7 +33,7 @@ cv_nav: true # set to true to have a link to a CV in the header
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -159,7 +159,8 @@ collections:
     output: true
     permalink: /reviews/:path/
   projects:
-    output: false
+    output: true
+    permalink: /projects/:path/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
