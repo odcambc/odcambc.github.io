@@ -7,7 +7,7 @@ image: "/assets/img/pub/2024_estevam.png"
 pmid: "39071407"
 pmcid: "PMC11275805"
 biorxiv:
-biorxiv_version: "2024.07.16.603579v1"
+biorxiv_version: "2024.07.16.603579v2"
 doi: "10.7554/eLife.101882.1"
 pdf:
 github:

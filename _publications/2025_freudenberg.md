@@ -7,5 +7,11 @@ image: "/assets/img/pub/2025_freudenberg.jpg"
 pmid: "41593735"
 pmcid: "PMC12918140"
 biorxiv_version: "2025.06.24.661380v1"
+github:
+  - description: "Github repository for Lilace"
+    url: "pimentellab/lilace"
+links:
+  - name: "Pimental lab website"
+    url: "pimentellab.com"
 #pdf: "
 ---
