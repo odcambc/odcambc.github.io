@@ -12,6 +12,6 @@ github:
     url: "pimentellab/lilace"
 links:
   - name: "Pimental lab website"
-    url: "pimentellab.com"
+    url: "https://pimentellab.com"
 #pdf: "
 ---
