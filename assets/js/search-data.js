@@ -183,6 +183,9 @@ ninja.data = [{
           section: "News",},{id: "news-gabby-s-followup-preprint-performing-inhibitor-screens-against-met-kinase-libraries-is-now-on-biorxiv-priyanka-and-i-also-published-a-review-of-an-interesting-recent-preprint-by-vincoff-et-al-which-fine-tuned-esm-2-on-fusion-oncoproteins-read-it-on-prereview-https-prereview-org-reviews-12658078-finally-i-just-joined-the-organizing-committee-of-the-atlas-of-variant-effects-seminar-series",
           title: 'Gabby’s followup preprint performing inhibitor screens against MET kinase libraries is now on...',
           description: "",
+          section: "News",},{id: "news-it-s-been-a-little-while-and-a-few-things-have-happened-i-m-now-a-scientist-in-the-wayment-steele-lab-at-uw-madison-i-m-having-a-lot-of-fun-setting-up-some-exciting-stuff-and-look-forward-to-showing-some-of-it-before-long-there-have-been-a-few-publications-matt-s-work-on-proton-sensing-gpcrs-is-out-in-cell-and-both-of-gabby-s-met-kinase-studies-landed-in-elife-the-conserved-regulatory-motifs-paper-and-its-inhibitor-resistance-mapping-followup-a-couple-dms-tools-have-been-published-too-jingyou-s-rosace-aa-in-bioinformatics-advances-jerome-s-lilace-in-genome-biology-there-are-also-pooja-s-fragment-screening-against-vatd-in-structure-and-a-review-of-high-throughput-mutational-screens-for-membrane-transporters-with-silas-and-the-raman-lab-in-cell-chemical-biology-a-preprint-about-a-suite-of-codon-foundation-models-using-our-dms-data-in-collaboration-with-the-goodarzi-lab-is-up-as-well-as-donovan-s-deep-mutational-scan-of-eccd3-in-the-mycobacterial-esx-secretion-system",
+          title: 'It’s been a little while, and a few things have happened. I’m now...',
+          description: "",
           section: "News",},{id: "publications-antineoplastic-agents-599-total-synthesis-of-dolastatin-16",
           title: 'Antineoplastic Agents. 599. Total Synthesis of Dolastatin 16',
           description: "",
@@ -360,7 +363,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=pyTBwS0AAAAJ", "_blank");
         },
       },{
         id: 'social-orcid',
