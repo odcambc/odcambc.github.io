@@ -49,6 +49,18 @@ table.table a {
   }
 }
 
+// A link that blends into body text (no theme color), but still
+// underlines on hover so it stays discoverable. Apply with the
+// kramdown inline attribute list: [text](url){:.subtle-link}
+a.subtle-link {
+  color: var(--global-text-color);
+
+  &:hover {
+    color: var(--global-text-color);
+    text-decoration: underline;
+  }
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
