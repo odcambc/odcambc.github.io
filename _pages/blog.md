@@ -139,9 +139,9 @@ pagination:
           <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
         {% endif %}
       </h3>
-      <p>{{ post.description }}</p>
+      <p><i>{{ post.description }}</i></p>
+      <p>{{ post.content }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
         {{ post.date | date: '%B %d, %Y' }}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
