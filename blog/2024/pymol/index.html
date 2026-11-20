@@ -1,6 +1,10 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Some useful PyMOL defaults | Christian B. Macdonald, Ph.D. </title> <meta name="author" content="Christian B. Macdonald"> <meta name="description" content="dot pymolrc"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/wain1_little.png?c204298cd547fc99f6672b1a2daa3aa1"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://odcambc.github.io/blog/2024/pymol/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Some useful PyMOL defaults | Christian B. Macdonald, Ph.D. </title> <meta name="author" content="Christian B. Macdonald"> <meta name="description" content="dot pymolrc"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/wain1_little.png?v=c204298cd547fc99f6672b1a2daa3aa1"> <link rel="apple-touch-icon" href="/assets/img/wain1_little.png?v=c204298cd547fc99f6672b1a2daa3aa1"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://odcambc.github.io/blog/2024/pymol/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Christian B. Macdonald, Ph.D. </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/">news </a> </li> <li class="nav-item "> <a class="nav-link" href="/reviews/">reviews </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Some useful PyMOL defaults</h1> <p class="post-meta"> Created on May 24, 2024 </p> <p class="post-tags"> <a href="/blog/2024"> <i class="fa-solid fa-calendar fa-sm"></i> 2024 </a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>PyMOL defaults can be set using a .pymolrc file, which can be edited from the “File/Edit pymolrc” menu.</p> <p>Here’s mine: mostly taken from Ben McIlwain, a postdoc in Randy’s lab.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set cartoon_oval_width, 0.2
+  </script> <link rel="stylesheet" href="/assets/css/site.css?v=0f19939adf7a"><script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script><script defer src="/assets/js/site.js?v=99a36a8b8ce8"></script></head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Christian B. Macdonald, Ph.D. </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/">news </a> </li> <li class="nav-item "> <a class="nav-link" href="/reviews/">reviews </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Some useful PyMOL defaults</h1> <p class="post-meta"> Created on May 24, 2024 </p> <p class="post-tags"> <a href="/blog/2024"> <i class="fa-solid fa-calendar fa-sm"></i> 2024 </a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>PyMOL defaults can be set using a .pymolrc file, which can be edited from the “File/Edit pymolrc” menu.</p> <p>Here’s mine: mostly taken from Ben McIlwain, a postdoc in Randy’s lab.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set cartoon_oval_width, 0.2
 set cartoon_oval_length, 0.95
 
 set ray_trace_mode,1
@@ -9,14 +13,415 @@ set spec_direct,0.1
 set ray_shadow,0
 
 set use_shaders, 1
-</code></pre></div></div> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/chain_renaming_pymol2/">Chain renaming in PyMOL</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/fake_densities/">De-spaghettification</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/more_pymol_notes/">PyMOL mapping notes</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/note-to-self/">Note to self</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/commands/">Some one-liners</a> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Christian B. Macdonald. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. Last updated: November 20, 2026. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-62JQ3VDEY8"></script> <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-62JQ3VDEY8');
-  </script> <script defer src="/assets/js/google-analytics-setup.js"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/tabs.min.js?b8748955e1076bbe0dabcf28f2549fdc"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+</code></pre></div></div> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/chain_renaming_pymol2/">Chain renaming in PyMOL</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/fake_densities/">De-spaghettification</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/more_pymol_notes/">PyMOL mapping notes</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/note-to-self/">Note to self</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/commands/">Some one-liners</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/abi/">Sanger to fastq</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/oct1/">OCT1 paper is out</a> </li> </ul> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Christian B. Macdonald. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. Last updated: November 20, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-62JQ3VDEY8"></script> <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-62JQ3VDEY8");
+</script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="/assets/js/tabs.js?v=6c399c7e9ab4c6ef34b5f0592d46a93d"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
     addBackToTop();
-  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "a list of current publications.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-news",
+          title: "news",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
+        },{id: "nav-reviews",
+          title: "reviews",
+          description: "public peer reviews.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/reviews/";
+          },
+        },{id: "post-chain-renaming-in-pymol",
+        
+          title: "Chain renaming in PyMOL",
+        
+        description: "Renaming chains uniquely",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/chain_renaming_pymol2/";
+          
+        },
+      },{id: "post-de-spaghettification",
+        
+          title: "De-spaghettification",
+        
+        description: "Making pseudo-densities",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/fake_densities/";
+          
+        },
+      },{id: "post-pymol-mapping-notes",
+        
+          title: "PyMOL mapping notes",
+        
+        description: "Reminders for pymol b factor spectrum mapping",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/more_pymol_notes/";
+          
+        },
+      },{id: "post-note-to-self",
+        
+          title: "Note to self",
+        
+        description: "I learned something new about ls",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/note-to-self/";
+          
+        },
+      },{id: "post-some-one-liners",
+        
+          title: "Some one-liners",
+        
+        description: "Some fastq/fasta manipulations",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/commands/";
+          
+        },
+      },{id: "post-sanger-to-fastq",
+        
+          title: "Sanger to fastq",
+        
+        description: "A quick script to convert ab1 files to fastq",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/abi/";
+          
+        },
+      },{id: "post-some-useful-pymol-defaults",
+        
+          title: "Some useful PyMOL defaults",
+        
+        description: "dot pymolrc",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/pymol/";
+          
+        },
+      },{id: "post-oct1-paper-is-out",
+        
+          title: "OCT1 paper is out",
+        
+        description: "OCT1 paper is out",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/oct1/";
+          
+        },
+      },{id: "news-i-started-my-postdoctoral-appointment-in-the-fraser-lab-at-ucsf",
+          title: 'I started my postdoctoral appointment in the Fraser Lab at UCSF!',
+          description: "",
+          section: "News",},{id: "news-i-presented-a-poster-at-the-2022-biophysical-society-meeting",
+          title: 'I presented a poster at the 2022 Biophysical Society meeting.',
+          description: "",
+          section: "News",},{id: "news-i-39-m-attending-the-ligand-recognition-and-molecular-gating-gordon-research-conference-and-seminar-in-italy",
+          title: 'I&amp;#39;m attending the Ligand Recognition and Molecular Gating Gordon Research conference and seminar...',
+          description: "",
+          section: "News",},{id: "news-we-just-posted-a-preprint-of-our-dms-library-generation-technique-dimple-https-www-biorxiv-org-content-10-1101-2022-07-26-501589v1",
+          title: 'We just posted a preprint of our DMS library generation technique, [DIMPLE](https://www.biorxiv.org/content/10.1101/2022.07.26.501589v1).',
+          description: "",
+          section: "News",},{id: "news-alexis-started-her-phd-program-in-biophysics-at-johns-hopkins-university-congrats",
+          title: 'Alexis started her PhD program in Biophysics at Johns Hopkins University - congrats!...',
+          description: "",
+          section: "News",},{id: "news-our-review-of-the-smrs-is-online-at-jbc-now-take-a-look-still-rocking-in-the-structural-era-a-molecular-overview-of-the-small-multidrug-resistance-smr-transporter-family-https-doi-org-10-1016-j-jbc-2022-102482",
+          title: 'Our review of the SMRs is online at JBC now: take a look!...',
+          description: "",
+          section: "News",},{id: "news-i-am-giving-a-seminar-at-the-university-of-san-francisco-quot-breaking-things-to-see-how-they-work-predicting-antibiotic-resistance-with-massively-parallel-assays-quot-thanks-to-professors-janet-yang-usf-https-www-usfca-edu-faculty-janet-yang-and-bassem-al-sady-ucsf-https-alsadylab-ucsf-edu-for-the-opportunity",
+          title: 'I am giving a seminar at the University of San Francisco: &amp;quot;Breaking things...',
+          description: "",
+          section: "News",},{id: "news-samantha-martinez-from-the-university-of-san-francisco-spent-the-break-in-the-lab-working-on-a-project-with-us-and-gave-a-great-presentation-for-the-ucsf-usf-internship-program-thanks-for-your-hard-work-samantha",
+          title: 'Samantha Martinez from the University of San Francisco spent the break in the...',
+          description: "",
+          section: "News",},{id: "news-i-received-a-mary-anne-koda-kimble-seed-award-for-innovation-to-support-my-efforts-for-massively-combinatorial-library-generation-for-transformative-pharmacogenomics-https-pharmacy-ucsf-edu-news-2023-08-innovation-gets-boost-2023-koda-kimble-seed-awards-with-an-exciting-acronym-shrimple",
+          title: 'I received a Mary Anne Koda-Kimble Seed Award for Innovation to support my...',
+          description: "",
+          section: "News",},{id: "news-i-was-awarded-an-f32-through-nigms-for-my-proposal-quot-connecting-structure-and-fitness-landscapes-to-overcome-antibiotic-resistance-quot",
+          title: 'I was awarded an F32 through NIGMS for my proposal &amp;quot;Connecting structure and...',
+          description: "",
+          section: "News",},{id: "news-we-had-a-few-papers-published-recently-our-paper-on-the-drug-transporter-oct1-was-published-in-molecular-cell-https-doi-org-10-1016-j-molcel-2024-04-008-and-our-rosace-paper-https-doi-org-10-1186-s13059-024-03279-7-was-just-published-in-genome-biology-also-matt-39-s-preprint-on-a-proton-sensing-gpcr-is-up-on-biorxiv-http-www-biorxiv-org-content-10-1101-2024-04-17-590000v1-as-well-as-gabby-39-s-preprint-on-met-kinase-http-www-biorxiv-org-content-10-1101-2023-08-03-551866v3-fusions-and-activating-mutations",
+          title: 'We had a few papers published recently: our paper on the drug transporter...',
+          description: "",
+          section: "News",},{id: "news-gabby-39-s-followup-preprint-performing-inhibitor-screens-against-met-kinase-libraries-is-now-on-biorxiv-https-www-biorxiv-org-content-10-1101-2024-07-16-603579v1-priyanka-and-i-also-published-a-review-of-an-interesting-recent-preprint-by-vincoff-et-al-https-www-biorxiv-org-content-10-1101-2024-06-03-597245v1-which-fine-tuned-esm-2-on-fusion-oncoproteins-read-it-on-prereview-https-prereview-org-reviews-12658078-finally-i-just-joined-the-organizing-committee-https-www-varianteffect-org-vess-committee-of-the-atlas-of-variant-effects-https-www-varianteffect-org-seminar-series",
+          title: 'Gabby&amp;#39;s followup preprint performing inhibitor screens against MET kinase libraries is [now on...',
+          description: "",
+          section: "News",},{id: "news-it-39-s-been-a-little-while-and-a-few-things-have-happened-i-39-m-now-a-scientist-in-the-wayment-steele-lab-https-waymentsteelelab-org-at-uw-madison-i-39-m-having-a-lot-of-fun-setting-up-some-exciting-stuff-and-look-forward-to-showing-some-of-it-before-long-there-have-been-a-few-publications-matt-39-s-work-on-proton-sensing-gpcrs-is-out-in-cell-https-doi-org-10-1016-j-cell-2024-11-036-and-both-of-gabby-39-s-met-kinase-studies-landed-in-elife-the-conserved-regulatory-motifs-https-doi-org-10-7554-elife-91619-paper-and-its-inhibitor-resistance-mapping-https-doi-org-10-7554-elife-101882-3-followup-a-couple-dms-tools-have-been-published-too-jingyou-39-s-rosace-aa-https-doi-org-10-1093-bioadv-vbaf218-in-bioinformatics-advances-jerome-39-s-lilace-https-doi-org-10-1186-s13059-026-03934-1-in-genome-biology-there-are-also-pooja-39-s-fragment-screening-against-vatd-https-doi-org-10-1016-j-str-2025-08-017-in-structure-and-a-review-of-high-throughput-mutational-screens-for-membrane-transporters-https-doi-org-10-1016-j-chembiol-2025-03-003-with-silas-and-the-raman-lab-in-cell-chemical-biology-a-preprint-about-a-suite-of-codon-foundation-models-https-www-biorxiv-org-content-10-1101-2024-10-10-617568v1-using-our-dms-data-in-collaboration-with-the-goodarzi-lab-is-up-as-well-as-donovan-39-s-deep-mutational-scan-of-eccd3-https-www-biorxiv-org-content-10-1101-2024-08-23-609456v1-in-the-mycobacterial-esx-secretion-system",
+          title: 'It&amp;#39;s been a little while, and a few things have happened. I&amp;#39;m now...',
+          description: "",
+          section: "News",},{id: "publications-antineoplastic-agents-599-total-synthesis-of-dolastatin-16",
+          title: 'Antineoplastic Agents. 599. Total Synthesis of Dolastatin 16',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2015-JNP599/";
+            },},{id: "publications-antineoplastic-agents-600-from-the-south-pacific-ocean-to-the-silstatins",
+          title: 'Antineoplastic Agents. 600. From the South Pacific Ocean to the Silstatins',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2015-JNP600/";
+            },},{id: "publications-a-topologically-diverse-family-of-fluoride-channels",
+          title: 'A topologically diverse family of fluoride channels',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2017-COSB/";
+            },},{id: "publications-guanidinium-export-is-the-primal-function-of-smr-family-transporters",
+          title: 'Guanidinium export is the primal function of SMR family transporters',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2018-PNAS/";
+            },},{id: "publications-the-structural-basis-of-promiscuity-in-small-multidrug-resistance-transporters",
+          title: 'The structural basis of promiscuity in small multidrug resistance transporters',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2020-Macdonald_Kermani/";
+            },},{id: "publications-deep-insertion-deletion-and-missense-mutation-libraries-for-exploring-protein-variation-in-evolution-disease-and-biology",
+          title: 'Deep insertion, deletion, and missense mutation libraries for exploring protein variation in evolution,...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2022-07-27-macdonald/";
+            },},{id: "publications-still-rocking-in-the-structural-era-a-molecular-overview-of-the-small-multidrug-resistance-smr-transporter-family",
+          title: 'Still rocking in the structural era: a molecular overview of the Small Multidrug...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2022-09-12-JBC/";
+            },},{id: "publications-conserved-regulatory-motifs-in-the-juxtamembrane-domain-and-kinase-n-lobe-revealed-through-deep-mutational-scanning-of-the-met-receptor-tyrosine-kinase-domain",
+          title: 'Conserved regulatory motifs in the juxtamembrane domain and kinase N-lobe revealed through deep...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2023_estevam/";
+            },},{id: "publications-rosace-a-robust-deep-mutational-scanning-analysis-framework-employing-position-and-mean-variance-shrinkage",
+          title: 'Rosace: a robust deep mutational scanning analysis framework employing position and mean-variance shrinkage...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2023_rao/";
+            },},{id: "publications-the-full-spectrum-of-slc22-oct1-mutations-illuminates-the-bridge-between-drug-transporter-biophysics-and-pharmacogenomics",
+          title: 'The full spectrum of SLC22 OCT1 mutations illuminates the bridge between drug transporter...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2023_yee/";
+            },},{id: "publications-mapping-kinase-domain-resistance-mechanisms-for-the-met-receptor-tyrosine-kinase-via-deep-mutational-scanning",
+          title: 'Mapping kinase domain resistance mechanisms for the MET receptor tyrosine kinase via deep...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2024_estevam/";
+            },},{id: "publications-molecular-basis-of-proton-sensing-by-g-protein-coupled-receptors",
+          title: 'Molecular basis of proton-sensing by G protein-coupled receptors',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2024_howard/";
+            },},{id: "publications-a-suite-of-foundation-models-captures-the-contextual-interplay-between-codons",
+          title: 'A Suite of Foundation Models Captures the Contextual Interplay Between Codons',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2024_naghipourfar/";
+            },},{id: "publications-deep-mutational-scanning-of-eccd3-reveals-the-molecular-basis-of-its-essentiality-in-the-mycobacterium-esx-secretion-system",
+          title: 'Deep mutational scanning of EccD3 reveals the molecular basis of its essentiality in...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2024_trinidad/";
+            },},{id: "publications-initial-leads-to-combat-streptogramin-resistance-generated-from-x-ray-fragment-screening-against-vatd",
+          title: 'Initial leads to combat streptogramin resistance generated from X-ray fragment screening against VatD...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2025_asthana/";
+            },},{id: "publications-accurate-variant-effect-estimation-in-facs-based-deep-mutational-scanning-data-with-lilace",
+          title: 'Accurate variant effect estimation in FACS-based deep mutational scanning data with Lilace',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2025_freudenberg/";
+            },},{id: "publications-understanding-inhibiting-and-engineering-membrane-transporters-with-high-throughput-mutational-screens",
+          title: 'Understanding, inhibiting, and engineering membrane transporters with high-throughput mutational screens',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2025_miller/";
+            },},{id: "publications-rosace-aa-enhancing-interpretation-of-deep-mutational-scanning-data-with-amino-acid-substitution-and-position-specific-insights",
+          title: 'Rosace-AA: Enhancing Interpretation of Deep Mutational Scanning Data with Amino Acid Substitution and...',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2025_rao/";
+            },},{id: "publications-mapping-the-sequence-determinants-of-constitutive-activity-in-gpcrs",
+          title: 'Mapping the sequence determinants of constitutive activity in GPCRs',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2026_howard_constitutive/";
+            },},{id: "publications-distinct-activation-mechanisms-underlie-ligand-efficacy-at-a-gpcr",
+          title: 'Distinct activation mechanisms underlie ligand efficacy at a GPCR',
+          description: "",
+          section: "Publications",handler: () => {
+              window.location.href = "/publications/2026_howard_efficacy/";
+            },},{id: "reviews-comprehensive-fitness-landscape-of-sars-cov-2-mpro-reveals-insights-into-viral-resistance-mechanisms",
+          title: 'Comprehensive fitness landscape of SARS-CoV-2 Mpro reveals insights into viral resistance mechanisms',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2022-06-20-flynn/";
+            },},{id: "reviews-interpreting-the-molecular-mechanisms-of-disease-variants-in-human-membrane-proteins",
+          title: 'Interpreting the molecular mechanisms of disease variants in human membrane proteins',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2022-09-02-tiemann/";
+            },},{id: "reviews-higher-order-epistasis-creates-idiosyncrasy-confounding-predictions-in-protein-evolution",
+          title: 'Higher-order epistasis creates idiosyncrasy, confounding predictions in protein evolution',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2022-10-14-buda/";
+            },},{id: "reviews-activating-alternative-transport-modes-in-a-multidrug-resistance-efflux-pump-to-confer-chemical-susceptibility",
+          title: 'Activating alternative transport modes in a multidrug resistance efflux pump to confer chemical...',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2022-11-08-spreacker/";
+            },},{id: "reviews-nitrogenase-resurrection-and-the-evolution-of-a-singular-enzymatic-mechanism",
+          title: 'Nitrogenase resurrection and the evolution of a singular enzymatic mechanism',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023-02-14-garcia/";
+            },},{id: "reviews-mutation-in-glutamate-transporter-homologue-glttk-provides-insights-into-pathologic-mechanism-of-episodic-ataxia-6",
+          title: 'Mutation in glutamate transporter homologue GltTk provides insights into pathologic mechanism of episodic...',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023-03-31-colucci/";
+            },},{id: "reviews-deep-boosted-molecular-dynamics-dbmd-accelerating-molecular-simulations-with-gaussian-boost-potentials-generated-using-probabilistic-bayesian-deep-neural-network",
+          title: 'Deep Boosted Molecular Dynamics (DBMD): Accelerating molecular simulations with Gaussian boost potentials generated...',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023_bp219_do/";
+            },},{id: "reviews-decoding-the-cure-all-effects-of-ginseng",
+          title: 'Decoding the Cure-all Effects of Ginseng',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023_bp219_loo/";
+            },},{id: "reviews-the-herbicide-acetochlor-causes-lipid-peroxidation-by-inhibition-of-glutathione-peroxidase-4",
+          title: 'The Herbicide Acetochlor Causes Lipid Peroxidation by Inhibition of Glutathione Peroxidase 4',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023_bp219_mesmar/";
+            },},{id: "reviews-phosphorylation-of-pyruvate-dehydrogenase-marks-the-inhibition-of-in-vivo-neuronal-activity",
+          title: 'Phosphorylation of pyruvate dehydrogenase marks the inhibition of in vivo neuronal activity',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023_bp219_yang/";
+            },},{id: "reviews-the-conserved-protein-cba1-is-required-for-vitamin-b12-uptake-in-different-algal-lineages",
+          title: 'The conserved protein CBA1 is required for vitamin B12 uptake in different algal...',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023_bp219_sayer/";
+            },},{id: "reviews-heterogeneous-folding-landscapes-and-predetermined-breaking-points-within-a-protein-family",
+          title: 'Heterogeneous folding landscapes and predetermined breaking points within a protein family',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2024_macdonald_pechmann/";
+            },},{id: "reviews-fuson-plm-a-fusion-oncoprotein-specific-language-model-via-focused-probabilistic-masking",
+          title: 'FusOn-pLM: A Fusion Oncoprotein-Specific Language Model via Focused Probabilistic Masking',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2024_vincoff/";
+            },},{id: "reviews-the-simplicity-of-protein-sequence-function-relationships",
+          title: 'The simplicity of protein sequence-function relationships',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023-park/";
+            },},{id: "reviews-the-genetic-architecture-of-protein-stability",
+          title: 'The genetic architecture of protein stability',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/2023-faure/";
+            },},{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/odcambc", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=pyTBwS0AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-0201-8832", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%63%68%72%69%73%74%69%61%6E.%6D%61%63%64%6F%6E%61%6C%64@%77%69%73%63.%65%64%75", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
