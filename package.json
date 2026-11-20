@@ -1,6 +1,12 @@
 {
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.4.0",
-    "prettier": "^3.1.1"
+    "jsdom": "26.1.0",
+    "prettier": "^3.1.1",
+    "prismjs": "1.30.0"
+  },
+  "scripts": {
+    "sync:distill-prism": "node bin/sync-distill-prism.mjs",
+    "test:security": "node --test test/security.test.mjs"
   }
 }
