@@ -1,12 +1,3 @@
-# this file uses prebuilt image in dockerhub
-services:
-  jekyll:
-    image: amirpourmand/al-folio:slim
-    #build: .
-    ports:
-      - 8080:8080
-      - 35729:35729
-    volumes:
-      - .:/srv/jekyll
-    environment:
-      - JEKYLL_ENV=development
+# Compatibility entry point: docker compose -f docker-compose-slim.yml up --build
+include:
+  - docker-compose.yml
