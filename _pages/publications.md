@@ -18,6 +18,7 @@ nav_order: 2
 
 {% assign sorted = site.publications | sort: "pub_date" | reverse %}
 {% for publication in sorted %}
+{% assign biorxiv_doi_prefix = publication.biorxiv_doi_prefix | default: "10.1101" %}
 
 <hr>
 <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
@@ -43,10 +44,12 @@ nav_order: 2
 </div>
 
 <div class="row" style="padding-top: 20px; margin-top: -20px">
+	{% if publication.image %}
 	<div class="col-sm-6">
 		<img class = "img-fluid" src = "{{publication.image}}" alt = "Key Figure" style="max-height: 200px;">
 	</div>
-	<ul class="col-sm-6">
+	{% endif %}
+	<ul class="{% if publication.image %}col-sm-6{% else %}col-sm-12{% endif %}">
 		<br>
 		<h6>Access the paper</h6>
 		<!--PMID-->
@@ -61,12 +64,12 @@ nav_order: 2
 
     	<!--Biorxiv - optional -->
     	{% if publication.biorxiv %}
-    	<li>Biorxiv Preprint: <a href="http://dx.doi.org/10.1101/{{publication.biorxiv}}" title =  "BioRxiv Preprint: {{publication.biorxiv}} (opens in new tab)" target="_blank"> {{publication.biorxiv | split: "." | last }}</a></li>
+    <li>Biorxiv Preprint: <a href="https://doi.org/{{biorxiv_doi_prefix}}/{{publication.biorxiv}}" title =  "BioRxiv Preprint: {{publication.biorxiv}} (opens in new tab)" target="_blank"> {{publication.biorxiv | split: "." | last }}</a></li>
     	{% endif %}
 
     	<!--Biorxiv specific version-->
     	{% if publication.biorxiv_version %}
-    	<li>Biorxiv Preprint v{{publication.biorxiv_version | split: "." | last | split: "v" | last }}: <a href="http://www.biorxiv.org/content/10.1101/{{publication.biorxiv_version}}" title =  "BioRxiv Preprint: {{publication.biorxiv_version}} (opens in new tab)" target="_blank">{{publication.biorxiv_version | split: "." | last | split: "v" | first }}</a></li>
+    <li>Biorxiv Preprint v{{publication.biorxiv_version | split: "." | last | split: "v" | last }}: <a href="https://www.biorxiv.org/content/{{biorxiv_doi_prefix}}/{{publication.biorxiv_version}}" title =  "BioRxiv Preprint: {{publication.biorxiv_version}} (opens in new tab)" target="_blank">{{publication.biorxiv_version | split: "." | last | split: "v" | first }}</a></li>
     	{% endif %}
 
     	<!--Arxiv - optional -->
