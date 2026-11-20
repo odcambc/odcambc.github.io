@@ -14,17 +14,17 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-<div class="publications">
+<div class="publications site-publications">
 
 {% assign sorted = site.publications | sort: "pub_date" | reverse %}
 {% for publication in sorted %}
 {% assign biorxiv_doi_prefix = publication.biorxiv_doi_prefix | default: "10.1101" %}
 
-<hr>
-<div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
+<article class="site-record"{% if publication.pmid %} id="{{ publication.pmid }}"{% endif %}>
+<header class="site-record-header">
  <div>
-  <h5>{{ publication.title | markdownify  | remove: '<p>' | remove: '</p>'}}</h5>
-  <h6>{{ publication.authors | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
+  <h2 class="site-record-title">{{ publication.title | markdownify  | remove: '<p>' | remove: '</p>'}}</h2>
+  <h3 class="site-record-subtitle">{{ publication.authors | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
   {% if publication.journal %}
    <i>{{ publication.journal }},</i>
    {{publication.pub_date | split: "-" | first }}
@@ -41,17 +41,16 @@ nav_order: 2
    {% endif %}
   {% endif %}
  </div>
-</div>
+</header>
 
-<div class="row" style="padding-top: 20px; margin-top: -20px">
+<div class="site-record-details{% if publication.image %} site-publication-with-image{% endif %}">
  {% if publication.image %}
- <div class="col-sm-6">
-  <img class = "img-fluid" src = "{{publication.image}}" alt = "Key Figure" style="max-height: 200px;">
+ <div class="site-record-figure">
+  <img class="site-record-image" src="{{ publication.image | relative_url }}" alt = "Key Figure" style="max-height: 200px;">
  </div>
  {% endif %}
- <ul class="{% if publication.image %}col-sm-6{% else %}col-sm-12{% endif %}">
-  <br>
-  <h6>Access the paper</h6>
+ <ul class="site-record-links">
+  <li class="site-link-heading"><h3 class="site-record-subtitle">Access the paper</h3></li>
   <!--PMID-->
   {% if publication.pmid %}
   <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{publication.pmid}}" title = "PubMed: {{publication.pmid}} (opens in new tab)" target="_blank"> {{publication.pmid}}</a></li>
@@ -174,8 +173,7 @@ nav_order: 2
 
      <!--additional links - optional-->
      {% if publication.links %}
-      <br>
-      <h6>Additional Link{% if publication.links.size > 1 %}s{% endif %}</h6>
+      <li class="site-link-heading"><h3 class="site-record-subtitle">Additional Link{% if publication.links.size > 1 %}s{% endif %}</h3></li>
       {% for link in publication.links %}
        <li><a href="{{link.url}}" alt="{{link.name}} (opens in new tab)" target="_blank">{{link.name}}</a></li>
       {% endfor %}
@@ -183,6 +181,6 @@ nav_order: 2
     </ul>
 
 </div>
-<br>
+</article>
 {% endfor %}
 </div>

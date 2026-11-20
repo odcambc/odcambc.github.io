@@ -10,8 +10,8 @@ tabs: true
 
 Suppose you have, for whatever reason, a bunch of structures that you want to compare. If you have a couple, it's easy enough to just look at them. What if you have a dozen? Or a thousand? Things become a bit harder. Take this, for example: here, I aligned about 100 various homologous proteins to a reference structure. It's a bit of a mess.
 
-<div class="row mt-3">
-{% include figure.liquid loading="eager" path="assets/img/posts/spaghetti_1.png" class="img-fluid rounded z-depth-1" %}
+<div class="site-post-figures">
+{% include figure.liquid loading="eager" path="assets/img/posts/spaghetti_1.png" class="site-post-image" %}
 </div>
 <div class="caption">Figure 1: a ball of spaghetti.</div>
 
@@ -54,12 +54,12 @@ Use ChimeraX for the rest. Open the DX file as well as your reference structure.
 
 Play with the gaussian surface levels to get a view of the density. Also try different map styles: image is sort of neat.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/posts/backlight_1.png" class="img-fluid rounded z-depth-1" %}
+<div class="site-post-figures">
+    <div class="site-post-figure">
+        {% include figure.liquid loading="eager" path="assets/img/posts/backlight_1.png" class="site-post-image" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/posts/backlight_2.png" class="img-fluid rounded z-depth-1" %}
+    <div class="site-post-figure">
+        {% include figure.liquid loading="eager" path="assets/img/posts/backlight_2.png" class="site-post-image" %}
     </div>
 </div>
 <div class="caption">
@@ -68,9 +68,9 @@ Play with the gaussian surface levels to get a view of the density. Also try dif
 
 Surface is a bit clearer, if not quite as pretty.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/posts/surface_1.png" class="img-fluid rounded z-depth-1" %}
+<div class="site-post-figures">
+    <div class="site-post-figure">
+        {% include figure.liquid loading="eager" path="assets/img/posts/surface_1.png" class="site-post-image" %}
     </div>
 </div>
 <div class="caption">
