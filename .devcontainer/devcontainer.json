@@ -9,8 +9,12 @@
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
       "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
     },
-    "ghcr.io/devcontainers-extra/features/prettier:1": {}
+    "ghcr.io/devcontainers/features/node:2": {
+      "version": "22"
+    }
   },
+
+  "postCreateCommand": "bundle install && npm ci",
 
   // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
   "postAttachCommand": "./bin/entry_point.sh",
