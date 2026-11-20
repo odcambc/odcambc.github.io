@@ -31,6 +31,11 @@ jobs:
         with:
           ruby-version: "3.4"
           bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@dffe9a5223d84653c13374032382f6bb5de8e5ef # v0.17.0
         with:
@@ -47,10 +52,6 @@ jobs:
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
           bundle exec jekyll build
-      - name: Purge unused CSS 🧹
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
       - name: Get Chromium version 🌐
         # https://github.com/GoogleChromeLabs/chrome-for-testing?tab=readme-ov-file#other-api-endpoints
         run: |
@@ -66,9 +67,11 @@ jobs:
         run: |
           npm install -g chromedriver@$CHROMIUM_VERSION
       - name: Run axe 🪓
+        env:
+          TARGET_PATH: ${{ inputs.url }}
         # https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli
         run: |
           npm install -g @axe-core/cli
           npm install -g http-server
-          http-server _site/ &
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver http://localhost:8080/${{ github.event.inputs.url || env.URL }} --load-delay=1500 --exit
+          http-server _site/ -p 8080 &
+          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver "http://localhost:8080/${TARGET_PATH}" --load-delay=1500 --exit

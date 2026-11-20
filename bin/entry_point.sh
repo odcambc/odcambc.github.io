@@ -1,37 +1,55 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 
-echo "Entry point script running"
+CONFIG_FILE=${JEKYLL_CONFIG:-_config.yml}
+SITE_DESTINATION=${JEKYLL_DESTINATION:-/tmp/odcambc-site}
+SITE_PORT=${JEKYLL_PORT:-8080}
+jekyll_pid=""
 
-CONFIG_FILE=_config.yml
-
-# Function to manage Gemfile.lock
-manage_gemfile_lock() {
-    git config --global --add safe.directory '*'
-    if command -v git &> /dev/null && [ -f Gemfile.lock ]; then
-        if git ls-files --error-unmatch Gemfile.lock &> /dev/null; then
-            echo "Gemfile.lock is tracked by git, keeping it intact"
-            git restore Gemfile.lock 2>/dev/null || true
-        else
-            echo "Gemfile.lock is not tracked by git, removing it"
-            rm Gemfile.lock
-        fi
+cleanup() {
+    if [ -n "$jekyll_pid" ] && kill -0 "$jekyll_pid" 2>/dev/null; then
+        kill -TERM "$jekyll_pid" 2>/dev/null || true
+        wait "$jekyll_pid" 2>/dev/null || true
     fi
 }
+trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+
+if [ ! -f "$CONFIG_FILE" ]; then
+    echo "Run the preview from the website root; missing $CONFIG_FILE." >&2
+    exit 1
+fi
+
+# A preview must never restore, delete, or silently resolve the tracked lockfile.
+if ! bundle check; then
+    BUNDLE_FROZEN=true bundle install --jobs 4 --retry 3
+fi
+npm ci --prefer-offline
+mkdir -p "$SITE_DESTINATION"
 
 start_jekyll() {
-    manage_gemfile_lock
-    bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
+    bundle exec jekyll serve --watch --port="$SITE_PORT" --host=0.0.0.0 \
+        --livereload --force_polling --destination "$SITE_DESTINATION" \
+        --config "$CONFIG_FILE" &
+    jekyll_pid=$!
 }
 
 start_jekyll
+config_signature=$(cksum < "$CONFIG_FILE")
 
-while true; do
-    inotifywait -q -e modify,move,create,delete $CONFIG_FILE
-    if [ $? -eq 0 ]; then
-        echo "Change detected to $CONFIG_FILE, restarting Jekyll"
-        jekyll_pid=$(pgrep -f jekyll)
-        kill -KILL $jekyll_pid
+# Docker Desktop bind mounts do not reliably deliver inotify close-write events.
+# Poll the config checksum, tolerating editors that replace the file atomically.
+while kill -0 "$jekyll_pid" 2>/dev/null; do
+    sleep 2
+    if [ ! -f "$CONFIG_FILE" ]; then
+        continue
+    fi
+    if next_signature=$(cksum < "$CONFIG_FILE") && [ "$next_signature" != "$config_signature" ]; then
+        cleanup
+        config_signature=$next_signature
         start_jekyll
     fi
 done
+
+wait "$jekyll_pid"

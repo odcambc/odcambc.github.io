@@ -1,0 +1,168 @@
+/* Site-owned additions to the gem theme. */
+a.subtle-link,
+a.subtle-link:hover {
+  color: var(--global-text-color);
+}
+
+a.subtle-link:hover {
+  text-decoration: underline;
+}
+
+.site-record {
+  border-top: 1px solid var(--global-divider-color, currentColor);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  scroll-margin-top: 5rem;
+}
+
+.site-record-header {
+  margin-bottom: 1rem;
+}
+
+.site-record-title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+.site-record-subtitle {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+.site-record-details {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-record-details > * {
+  min-width: 0;
+}
+
+.site-record-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.site-record-links {
+  line-height: 1.4;
+  list-style: disc;
+  margin: 0;
+  overflow-wrap: anywhere;
+  padding-left: 1.25rem;
+}
+
+.site-record-links li {
+  margin-block: 0;
+}
+
+.site-record-links ul {
+  list-style: circle;
+  padding-left: 1.25rem;
+}
+
+.site-record-links .site-link-heading {
+  list-style: none;
+  margin-left: -1.25rem;
+}
+
+.site-record-links .site-link-heading:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.site-blog-topics ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.site-post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-post-entry {
+  border-bottom: 1px solid var(--global-divider-color, currentColor);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.site-post-entry article,
+.site-post-content {
+  min-width: 0;
+}
+
+.site-post-thumbnail {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.site-featured-posts,
+.site-project-grid,
+.site-repositories-grid,
+.site-post-figures {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.site-featured-post {
+  border: 1px solid var(--global-divider-color, currentColor);
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.site-post-figures {
+  margin-top: 1rem;
+}
+
+.site-post-figure {
+  min-width: 0;
+}
+
+.site-post-image {
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 16%);
+  height: auto;
+  max-width: 100%;
+}
+
+@media (min-width: 36rem) {
+  .site-publication-with-image {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-review-details {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .site-post-with-thumbnail {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  }
+
+  .site-post-figures {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 48rem) {
+  .site-featured-posts,
+  .site-project-grid--two,
+  .site-repositories-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-project-grid--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

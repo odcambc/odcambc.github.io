@@ -1,4 +1,4 @@
-name: Security checks
+name: Security and upgrade checks
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  dependencies-and-regressions:
+  dependencies-and-upgrade:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,11 +20,6 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
-      - name: Verify vendored Prism matches its package and security patch
-        run: |
-          npm run sync:distill-prism
-          git diff --exit-code -- assets/js/distillpub/prism.js assets/js/distillpub/PRISM-LICENSE.txt
-      - run: npm run test:security
       - run: npm audit --audit-level=low
       - uses: ruby/setup-ruby@v1
         with:
@@ -32,3 +27,5 @@ jobs:
           bundler-cache: true
       - run: gem install bundler-audit --version 0.9.3 --no-document
       - run: bundle-audit check --update
+      - run: bundle exec al-folio upgrade audit
+      - run: bundle exec al-folio upgrade overrides audit

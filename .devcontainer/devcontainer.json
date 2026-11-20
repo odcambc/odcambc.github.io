@@ -1,20 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-  "name": "Jekyll",
-  "image": "mcr.microsoft.com/devcontainers/jekyll",
-
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  "features": {
-    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
-    },
-    "ghcr.io/devcontainers/features/node:2": {
-      "version": "22"
-    }
+  "name": "Personal website — Ruby 3.4 / Node 22",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
   },
 
-  "postCreateCommand": "bundle install && npm ci",
+  "postCreateCommand": "BUNDLE_FROZEN=true bundle install && npm ci",
+  "forwardPorts": [8080, 35729],
 
   // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
   "postAttachCommand": "./bin/entry_point.sh",
